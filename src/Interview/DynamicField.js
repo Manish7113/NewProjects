@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material"
+import { FormLabel, TextField,Grid} from "@mui/material"
 import { Button } from "bootstrap"
 import { Formik, Field, ErrorMessage, Form } from "formik";
 import * as Yup from "yup";
@@ -32,7 +32,10 @@ export default function DynamicField(){
     return(
         <div>
             <form onSubmit={handleSubmit}>
+              <Grid xs={6} sm={6} lg={12} sx={{display:'flex',justifyContent:'center', flexDirection:'column'}}>
+            <FormLabel>enter number</FormLabel>
             <TextField id="outlined-basic" type="number" name="prevention"  label="Outlined" variant="outlined" />
+            </Grid>
             {/* <Button type='submit'>Submit</Button> */}
             <button type="submit">submit</button>
 
