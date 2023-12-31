@@ -1,11 +1,13 @@
 import './App.css';
-import DynamicField from './Interview/DynamicField';
+import Portofolio from './Portfolio/index';
+// import DynamicField from './Interview/DynamicField'; // for dynamic field option 
 
 function App() {
   return (
     <div className="App">
       <p>Hello world</p>
-      <DynamicField/>
+      <Portofolio/>
+      {/* <DynamicField/> */}
     </div>
   );
 }
